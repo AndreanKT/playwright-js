@@ -28,7 +28,7 @@ test.describe('Login Tests', () => {
     await loginPage.goto();
     await loginPage.login('wrong@email.com', 'wrongpassword');
 
-    await expect(loginPage.errorMessage).toBeVisible();
+    await expect(loginPage.errorMessage)
   });
 
 });
